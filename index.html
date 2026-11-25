@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My First Website</title>
+    <title>My Server Project</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Hello, I am Mahesh</h1>
-    <p>This is my first website.</p>
-
-    <button id="message-button">Click me</button>
-
+    <main class="card">
+      <p class="label">MY FIRST CLIENT-SERVER PROJECT</p>
+      <h1>Hello, Mahesh!</h1>
+      <p>This page asks the server for a message.</p>
+      <button id="message-button">Get message from server</button>
+      <p id="server-message" aria-live="polite"></p>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
