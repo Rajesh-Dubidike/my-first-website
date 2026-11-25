@@ -17,8 +17,8 @@ database.run(`
 // Lets Express read JSON sent from script.js.
 app.use(express.json());
 
-// Makes index.html, style.css, and script.js available in the browser.
-app.use(express.static(__dirname));
+// Makes the built React app available in the browser.
+app.use(express.static(path.join(__dirname, 'client', 'dist')));
 
 // GET: send every task from SQLite to the browser.
 app.get('/api/tasks', (request, response) => {
