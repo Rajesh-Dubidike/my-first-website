@@ -9,9 +9,8 @@ body {
 }
 
 .card {
-  width: min(430px, calc(100% - 40px));
+  width: min(500px, calc(100% - 40px));
   padding: 36px;
-  text-align: center;
   background: white;
   border-radius: 16px;
   box-shadow: 0 12px 30px rgba(23, 37, 84, 0.15);
@@ -19,6 +18,10 @@ body {
 
 .label { color: #2563eb; font-size: 12px; font-weight: bold; letter-spacing: 1px; }
 h1 { margin: 12px 0; }
+form { display: flex; gap: 8px; margin-top: 24px; }
+input { flex: 1; min-width: 0; padding: 12px; border: 1px solid #93c5fd; border-radius: 6px; font-size: 16px; }
 button { padding: 12px 18px; border: 0; border-radius: 6px; background: #2563eb; color: white; cursor: pointer; font-size: 16px; }
 button:hover { background: #1d4ed8; }
-#server-message { min-height: 24px; margin: 24px 0 0; font-weight: bold; }
+#message { min-height: 24px; color: #b91c1c; }
+#task-list { padding: 0; list-style: none; }
+#task-list li { padding: 12px; border-bottom: 1px solid #dbeafe; }
